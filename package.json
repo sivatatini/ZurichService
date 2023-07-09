@@ -1,0 +1,25 @@
+{
+  "name": "zurichservice",
+  "version": "1.0.0",
+  "description": "ZurichService",
+  "main": "Named after the cleanest city in terms of air quality, this service currently collects pollutant data from an array of sensors, stores them in MongoDb database and retrieves pollutant summary either specific to a particular sensor or an aggregated report with data collected from entire collection of the sensors that reports to this service",
+  "scripts": {
+    "start": "node ./index.js",
+    "test": "jest --runInBand --forceExit"
+  },
+  "author": "Siva Tatini",
+  "license": "ISC",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "express": "^4.18.2",
+    "mongodb-memory-server": "^8.13.0",
+    "mongoose": "^7.3.2",
+    "save-dev": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "jest": "^29.6.1",
+    "mockingoose": "^2.16.2",
+    "nodemon": "^2.0.22",
+    "supertest": "^6.3.3"
+  }
+}
